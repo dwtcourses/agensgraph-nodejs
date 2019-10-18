@@ -1,8 +1,11 @@
 {
-  "name": "agensgraph",
+  "name": "@liberation-data/agensgraph",
   "version": "0.1.0-rc",
   "description": "AgensGraph client for node.js",
-  "main": "./lib",
+  "files": [
+    "lib/**/*"
+  ],
+  "main": "./lib/index.js",
   "scripts": {
     "postinstall": "pegjs --output ./lib/agens.js --allowed-start-rules EdgeArray,VertexArray,_Edge,_Vertex,_Path,GraphId ./lib/agens.pegjs",
     "prepack": "pegjs --output ./lib/agens.js --allowed-start-rules EdgeArray,VertexArray,_Edge,_Vertex,_Path,GraphId ./lib/agens.pegjs",
